@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "gillroyLight";
+  src: url("Fonts/Gilroy-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "gillroyDark";
+  src: url("Fonts/Gilroy-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Neu";
+  src: url("Fonts/NeueMachina-Light.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+nav {
+  font-family: "Neu"; /* NeueMachina only in navbar */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 70px;
+  position: sticky;
+  top: 0;
+  background: black;
+  z-index: 10;  
+}
+
+.nav1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.nav1 img {
+  width: 2.2em;
+}
+
+.nav1 h3 {
+  font-size: 15px;
+  font-weight: normal;
+}
+.nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 42px;
+}
+
+.nav2 button {
+  font-size: 1.1em;
+  background-color: #27e0b3;
+  font-family: "Helvetica";
+  padding: 0.5em 1.5em;
+  border-radius: 0.2em;
+  border: none;
+}
+
+.nav2 h3 {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.nav3 {
+  display: none;
+  /* gap: 10px; */
+}
+
+@media (max-width: 800px) {
+  nav {
+    padding: 12px 14px;
+  }
+  .nav1 img {
+    width: 1.6em;
+  }
+  .nav3 {
+    display: flex;
+    gap: 23px;
+  }
+  .nav2 {
+    display: none;
+  }
+
+  .section1Mid {
+    width: 100%;
+    /* background-color: red; */
+    /* font-size: 50px !important;  */
+    line-height: 48px !important;
+  }
+
+  .section1Mid h2 {
+    font-size: 60px !important;
+  }
+
+  .section1Last {
+    padding: 40px 10px !important;
+  }
+
+  .section1LastA h3,
+  .section1LastB h3,
+  .section1LastC h3 {
+    font-size: 12px !important;
+  }
+  .section2 {
+    height: 45vh !important;
+  }
+
+  .section2Text {
+    font-size: 12px !important;
+  }
+
+  .section2Video iframe {
+    height: 250px !important;
+    width: 400px !important;
+    padding: 0px 30px;
+  }
+
+  .section2 button {
+    font-size: 14px !important;
+        margin-top: 15px;
+
+  }
+}
+
+.section1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.section1Mid {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 72px;
+}
+
+.section1Mid h2 {
+  font-family: "Neu";
+  text-align: center;
+  font-size: 80px;
+  font-weight: 300;
+}
+
+.section1Mid span {
+  color: #27e0b3;
+}
+
+.section1Mid button {
+  display: block;
+  margin: 15px auto 0;
+  font-family: "gillroyLight";
+  background-color: #27e0b3;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: 37px;
+}
+
+.section1Last {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: gray; */
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  padding: 0px 30vw;
+}
+
+.section1LastA h3,
+.section1LastB h3,
+.section1LastC h3 {
+  text-align: center;
+  font-family: "neu";
+  font-size: 20px;
+}
+
+.section2 {
+  height: 100vh;
+  width: 100%;
+  /* background-color: red; */
+  position: relative;
+}
+
+.section2Text {
+  text-align: center;
+  font-family: "neu";
+  font-size: 28px;
+}
+
+.section2Text2 {
+  color: #27e0b3;
+}
+
+.section2Video iframe {
+  height: 535px;
+  width: 952px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+.section2 button {
+  position: absolute;
+  left: 50%;
+  bottom: -15%;
+  transform: translate(-50%, -50%);
+  font-size: 1.1em;
+  background-color: #27e0b3;
+  font-family: "gillroyLight";
+  font-size: 20px;
+  font-weight: 900;
+  padding: 0.5em 1.5em;
+  border-radius: 0.2em;
+  border: none;
+}
